@@ -24,3 +24,4 @@ All of these environments are stochastic in terms of their initial state, within
 * [Cart Pole](./Cart-Pole-V1)
 * [Pendulum](./Pendulum-V1)
 * [Mountain Car](./MountainCar-V0)
+* [Acrobot](./Acrobot-V1)
