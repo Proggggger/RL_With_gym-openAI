@@ -18,6 +18,9 @@ Each environment (task) has it's own directory with it's own README file where m
 ___
 ### Currently solved tasks
 
+#### [Classic controls](https://gymnasium.farama.org/environments/classic_control/)
+All of these environments are stochastic in terms of their initial state, within a given range. In addition, Acrobot has noise applied to the taken action. Also, regarding both mountain car environments, the cars are underpowered to climb the mountain, so it takes some effort to reach the top.
+
 * [Cart Pole](./Cart-Pole-V1)
 * [Pendulum](./Pendulum-V1)
 * [Mountain Car](./MountainCar-V0)
