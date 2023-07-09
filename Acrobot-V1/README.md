@@ -1,12 +1,9 @@
-# Mountain Car V0
+# Acrobot V1
 [Back to main dir](../)
 ___
-_DQN solution for MountainCar is not the best one, but it still works._
+### DQN
+Acrobot has the same reward system as Mountain Car, but for this task we don't need to modify rewards, default one works great, in less thel 10 learning steps it starts to find working solutions. 
 
-***Here DQN model work is very unstable and changing parameters can lead to infinite training loop without result, when it catches some solution related actions bur after few iterations begins to fail again, so finetune it carefully***
+This notebooks contains two cells, one with a full training process, which starts from random actions and thenoptimizes task solution. After some threshold (in this case 120 iterations) for mean action time, weights for policy network are saved. ___Pay attention, training process wei overwrite existing pretrained model if it reaches threshold___
 
-First problem with this task is that reward always -1 until we solve task, so 
-we should modify reward to make learning process possible
-
-Because solution is not the best, i'm not providing pretrained DQN model, but it should achieve sume results after 50 iterations
-(you could always disable render mode to make simulation quicker)
+Second cell is used for testing pretrained model, so it contains simplified code without training steps, so if you already have pretrained model _(which included in this repo)_ you can run a second one
